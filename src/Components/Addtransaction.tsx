@@ -1,6 +1,6 @@
 import React,{useState,useContext} from 'react';
-import {GlobalContext} from '../Context/Appcontext'
-
+import {GlobalContext} from '../Context/Appcontext';
+import {PushNotification} from '../firebase';
 //add transaction function 
 export const Addtransaction = () =>{
 
@@ -56,8 +56,9 @@ export const Addtransaction = () =>{
                     
                 </div>
                 <button type="submit" className = "btn">Add Transaction</button>
-
+                
             </form>
+            <button className="btn_notifi" onClick={PushNotification}>Allow Notifications</button>
         </div>
     )
 }

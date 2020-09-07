@@ -5,10 +5,7 @@ import { transactionType, transType  } from '../Types/types';
 
 const initalState: transactionType = {
     transaction: [
-        { id: 1, text: 'Salary', amount: 50000 },
-        { id: 2, text: 'Books', amount: -500 },
-        { id: 3, text: 'Grocery', amount: -1000 },
-        { id: 4, text: 'Savings', amount: 2000 },
+        
     ],
     addTrans: () => {},
     deleteTrans: () => {},
